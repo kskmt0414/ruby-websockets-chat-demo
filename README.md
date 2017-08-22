@@ -4,7 +4,7 @@
 
 This is a simple application that serves tasty WebSockets to your users with [faye-websocket](https://github.com/faye/faye-websocket-ruby), [Puma](https://github.com/puma/puma), and [Sinatra](https://github.com/sinatra/sinatra).
 
-Check out the [live demo](http://ruby-websockets-chat.herokuapp.com/) or [read the docs](https://devcenter.heroku.com/articles/ruby-websockets).
+Check out the [live demo](https://morning-beyond-87610.herokuapp.com/) or [read the docs](https://devcenter.heroku.com/articles/ruby-websockets).
 
 ## Setup
 To install all the dependencies, run:
@@ -22,3 +22,8 @@ $ foreman start
 ```
 
 You can now visit <http://localhost:5000> to see the application.
+
+## ChangeLog
+
+- Update ruby version from 2.1.2 to 2.2.7.
+- Update libraries by Gemfile
