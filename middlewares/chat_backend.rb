@@ -40,7 +40,7 @@ module ChatDemo
         ws.on :close do |event|
           p [:close, ws.object_id, event.code, event.reason]
           @clients.delete(ws)
-          ws = nil
+          #ws = nil
         end
 
         # Return async Rack response
