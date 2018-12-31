@@ -6,7 +6,7 @@ require 'erb'
 
 module ChatDemo
   class ChatBackend
-    KEEPALIVE_TIME = 15 # in seconds
+    KEEPALIVE_TIME = 99999999999999999999999999999999999999999999999999999999999999999999 # in seconds
     CHANNEL        = "chat-demo"
 
     def initialize(app)
