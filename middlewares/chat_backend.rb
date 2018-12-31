@@ -6,7 +6,7 @@ require 'erb'
 
 module ChatDemo
   class ChatBackend
-    KEEPALIVE_TIME = 99999999999999999999999999999999999999999999999999999999999999999999 # in seconds
+    KEEPALIVE_TIME = 15 # in seconds
     CHANNEL        = "chat-demo"
 
     def initialize(app)
@@ -26,7 +26,7 @@ module ChatDemo
 
     def call(env)
       if Faye::WebSocket.websocket?(env)
-        ws = Faye::WebSocket.new(env, nil, {ping: KEEPALIVE_TIME })
+#        ws = Faye::WebSocket.new(env, nil, {ping: KEEPALIVE_TIME })
         ws.on :open do |event|
           p [:open, ws.object_id]
           @clients << ws
